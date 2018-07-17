@@ -52,3 +52,16 @@ function filter(arr, fn) {
 }
 
 
+function hazardWarningCreator(typeOfWarning) {
+    let warningCounter = 0;
+    return function(location) {
+        warningCounter++;
+        console.log(`DANGER! There is a ${typeOfWarning} hazard at ${location}!`);
+        console.log(`The ${typeOfWarning} hazard has triggered ${warningCounter} time(s) today!`);
+    }
+}
+
+const rocksWarning = hazardWarningCreator('Rocks on the Road');
+const hurricaneWarning = hazardWarningCreator('Hurricane coming for you');
+const tornadoWarning = hazardWarningCreator('Tornado near');
+
