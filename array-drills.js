@@ -42,4 +42,20 @@ function min(numbers) {
   return minNumber;
 }
 
-console.log(min([70, 5, 35, 60]));
+// console.log(min([70, 5, 35, 60]));
+
+
+//Write a function called average that takes an array of numbers as its input and returns the average 
+//generated from the array of numbers.
+
+function average(numbers) {
+  let total = 0;
+  numbers.forEach(element => total += element);
+
+  return total/numbers.length;
+}
+
+//const numbers = [2, 4, 6, 10];
+
+console.log(average([2, 4, 6, 10]));
+
