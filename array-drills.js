@@ -9,37 +9,37 @@
 'use strict';
 
 function max(numbers) {
-  if (numbers === []) {
-    return null;
-  }
+	if (numbers === []) {
+		return null;
+	}
 
-  // set to max number to 0
-  // iterate through each element and check if it is greater than the last element or 0
-  // if so, set that element to the max number
-  let maxNumber = numbers[0];
-  let i = 0;
-  while (i < numbers.length) {
-    if (numbers[i] > maxNumber) {
-      maxNumber = numbers[i];
-    }
-    i++;
-  }
-  return maxNumber;
+	// set to max number to 0
+	// iterate through each element and check if it is greater than the last element or 0
+	// if so, set that element to the max number
+	let maxNumber = numbers[0];
+	let i = 0;
+	while (i < numbers.length) {
+		if (numbers[i] > maxNumber) {
+			maxNumber = numbers[i];
+		}
+		i++;
+	}
+	return maxNumber;
 }
 
 function min(numbers) {
-  if (numbers === []) {
-    return null;
-  }
-  let i = 0;
-  let minNumber = numbers[0];
-  while (i < numbers.length) {
-    if (numbers[i] < minNumber) {
-      minNumber = numbers[i];
-    }
-    i++;
-  }
-  return minNumber;
+	if (numbers === []) {
+		return null;
+	}
+	let i = 0;
+	let minNumber = numbers[0];
+	while (i < numbers.length) {
+		if (numbers[i] < minNumber) {
+			minNumber = numbers[i];
+		}
+		i++;
+	}
+	return minNumber;
 }
 
 // console.log(min([70, 5, 35, 60]));
@@ -49,10 +49,10 @@ function min(numbers) {
 //generated from the array of numbers.
 
 function average(numbers) {
-  let total = 0;
-  numbers.forEach(element => total += element);
+	let total = 0;
+	numbers.forEach(element => total += element);
 
-  return total/numbers.length;
+	return total/numbers.length;
 }
 
 //const numbers = [2, 4, 6, 10];
